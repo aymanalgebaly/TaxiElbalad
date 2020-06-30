@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_taxi_new"
+    tools:context=".ui.fragment.RoutOneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design_curv_mid_gray">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/red_field"
+                android:text="المسار الرابع"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txt_routThree"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txt_routThree"
+                android:text="من باب المدينة الي مسجد الشافعي"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@drawable/rout_img"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/rout_four"
+        android:id="@+id/img_rout_des"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_design_curv_soft_gray"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مسار 4 المنطقة التاريخية"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/moov"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يبدأ المسار من باب المدينة الى مسجد الشافعي
+يحتوى المسار على"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="منطقة الفعاليات"
+            android:textColor="@color/txtred"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="معالم تاريخيه"
+            android:textColor="@color/txtred"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت عبدالله متبولي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت بن زقر"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت السلوم"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت البترجي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت قابل"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت باديب"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت باناجه"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مكتبة جده التاريخية"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="السفارة الأمريكية"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مقعد باجسير"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مقعد حارة الشام"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت عبدالله شلبي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت الناظر"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت الجمجوم"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مسجد الشافعي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مخبز جده التاريخي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مخبز الصعيدي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت باعشن"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت باجسير"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="السفارة المصرية"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مركاز طارق أبو صفية"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت باعيسى"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

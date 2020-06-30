@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_taxi_new"
+    tools:context=".ui.fragment.TripFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_gravity="end"
+            android:layout_height="match_parent"
+            android:background="@drawable/trip_img"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/button_design_curv_soft_gray"
+        android:layout_margin="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingTop="30dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:text="حي البلد في جدة هو احد مواقع التراث العالمية التي اعلنتها منظمة اليونسكو. و قد تشبعت هذه المنطقة بالكثير من مظاهر التقاليد و الثقافة و التراث التي تعطي الزوار لمحات عن تاريخ جدة العريق. يحتفل موسم جدة التاريخية و الفنون و الموسيفي و الترفيه. و يجمع بين السكان و الزوار علي حد سواء.فيغوص الزوار في هذا العالم الرائع من خلال جولات سياحية لهذة الاماكن المميزه."
+        android:id="@+id/img_rout_des"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:text="احد هذه المعالم هو مسجد ابو عنبة. احد المعالم الهامة التي يعود تاريخها الي سبعة قرون. و يستوعب هذا المسجد حوالي 400 شخص في ذات الوقت."
+            android:id="@+id/img_rout_des2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text=" اما مسجد الشافعي و الذي بني في القرن السابع الهجري."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="فهو موقع تاريخي هام اخر في مدينة جدة تجب زيارته. و قد تم نرميم هذا المسجد الفريد و المعروف بهندسته المعمارية الرائعة. و حاليا يستقبل المصلين لتادية شعائرهم."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="موقع تاريخي اخر هو بيت باعشن. و هو منزل عمره اكثر من 200 عام بني عام 1273ه ."
+        android:id="@+id/img_rout_des3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text=" وهو واحد من اقدم بيوت عائلة باعشن حيث عقد كبار الشخصيات في جدة"/>
+
+    </LinearLayout>
+
+</LinearLayout>

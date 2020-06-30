@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_taxi_new"
+    tools:context=".ui.fragment.RoutOneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="5">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design_curv_mid_gray">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/red_field"
+                android:text="المسار الثاني"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txt_routTwo"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txt_routTwo"
+                android:text="من سوق المحمل الي سوق البدو"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@drawable/rout_img"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/rout_two"
+        android:id="@+id/img_rout_des"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_design_curv_soft_gray"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مسار 2 سوق العلوي"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/moov"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يبدأ المسار من سوق المحمل الى سوق البدو
+يحتوى المسار على"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="معالم تاريخيه"
+                    android:textColor="@color/txtred"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مسار الحج"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="البيت الحجازي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت نور ولي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مسجد المعمار"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بيت نصيف"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بئر المعمار"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عين القوصية"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مقعد المتبولي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مسجد المغربي"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مسجد عكاشة"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="أسواق"
+                    android:textColor="@color/txtred"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="محلات السبح."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="محلات السجاد."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="محلات أقمشة."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="محلات العودة."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الشلبي للعطارة."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="محلات العبائات."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="بن يعلا للصرافة."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="أسواق باب مكة"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="فضيات رجالية"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="سوق البدو"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

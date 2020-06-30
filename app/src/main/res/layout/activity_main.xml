@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_taxi_new"
+    tools:context=".ui.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:id="@+id/lin_main">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:transitionName="card_trans"
+            android:id="@+id/card_main"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/yellow"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transitionName="lin_trans"
+                android:background="@drawable/button_design_curv_yellow"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/pro_img"
+                    android:id="@+id/img_main"
+                    android:transitionName="img_trans"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="10dp"
+            android:text="تسجيل الدخول"
+            android:transitionName="btns_trans"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:id="@+id/btn_sign_in"
+            android:textStyle="bold"
+            android:background="@drawable/button_design_curv_brown"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="80dp"
+            android:layout_marginStart="80dp"
+            android:text="دخول للحساب"
+            android:transitionName="btn_trans"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:id="@+id/btn_sign_up"
+            android:textStyle="bold"
+            android:background="@drawable/button_design_curv_dark_gray"/>
+    </LinearLayout>
+
+
+</LinearLayout>
