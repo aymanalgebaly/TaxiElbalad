@@ -165,6 +165,8 @@ public class RegisterActivity extends AppCompatActivity {
                 try {
                     assert response.body() != null;
                     String string = response.body().string();
+
+                    Log.i( "onResponse: ",string);
                     if (string.equals("True")) {
 
 //                        enterCode();
@@ -242,12 +244,5 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
-
-
-//    public void confirm_code(View view) {
-//
-//        enterCode();
-//
-//    }
 
 }

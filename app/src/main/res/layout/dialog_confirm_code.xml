@@ -28,7 +28,6 @@
             android:gravity="center"
             android:textColor="@color/blown"
             android:textSize="20sp"
-            android:onClick="ed_txt"
             android:textStyle="bold"
             android:id="@+id/ed_confirm_code"/>
 
