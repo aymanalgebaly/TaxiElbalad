@@ -38,6 +38,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.Objects;
+import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -325,7 +326,8 @@ public class TicketFragment extends Fragment {
 
             progress.setVisibility(View.VISIBLE);
 
-            RetrofitClient.getInstant().create(API.class).insertTicket(id, String.valueOf(num_over_five), String.valueOf(num_under_five), item_ma7ata
+            RetrofitClient.getInstant().create(API.class).insertTicket(id, String.valueOf(num_over_five),
+                    String.valueOf(num_under_five), item_ma7ata
                     , txtDate.getText().toString(), txtTime.getText().toString(), item_tkt_postion)
                     .enqueue(new Callback<ResponseBody>() {
                         @Override
@@ -374,22 +376,22 @@ public class TicketFragment extends Fragment {
         in.putExtra(PaymentParams.CURRENCY_CODE, "SAR");
         in.putExtra(PaymentParams.CUSTOMER_PHONE_NUMBER, "01111828535");
         in.putExtra(PaymentParams.CUSTOMER_EMAIL, "customer-email@example.com");
-        in.putExtra(PaymentParams.ORDER_ID, "123456");
-        in.putExtra(PaymentParams.PRODUCT_NAME, "Product 1, Product 2");
+        in.putExtra(PaymentParams.ORDER_ID, getSaltString());
+        in.putExtra(PaymentParams.PRODUCT_NAME, item_tkt_postion);
 
 //Billing Address
-        in.putExtra(PaymentParams.ADDRESS_BILLING, "Flat 1,Building 123, Road 2345");
+        in.putExtra(PaymentParams.ADDRESS_BILLING, "jeddah");
         in.putExtra(PaymentParams.CITY_BILLING, "jeddah");
         in.putExtra(PaymentParams.STATE_BILLING, "jeddah");
-        in.putExtra(PaymentParams.COUNTRY_BILLING, "SAR");
-        in.putExtra(PaymentParams.POSTAL_CODE_BILLING, "00973"); //Put Country Phone code if Postal code not available '00973'
+        in.putExtra(PaymentParams.COUNTRY_BILLING, "SAU");
+        in.putExtra(PaymentParams.POSTAL_CODE_BILLING, "00966"); //Put Country Phone code if Postal code not available '00973'
 
 //Shipping Address
-        in.putExtra(PaymentParams.ADDRESS_SHIPPING, "Flat 1,Building 123, Road 2345");
+        in.putExtra(PaymentParams.ADDRESS_SHIPPING, "jeddah");
         in.putExtra(PaymentParams.CITY_SHIPPING, "jeddah");
         in.putExtra(PaymentParams.STATE_SHIPPING, "jeddah");
-        in.putExtra(PaymentParams.COUNTRY_SHIPPING, "SAR");
-        in.putExtra(PaymentParams.POSTAL_CODE_SHIPPING, "00973"); //Put Country Phone code if Postal code not available '00973'
+        in.putExtra(PaymentParams.COUNTRY_SHIPPING, "SAU");
+        in.putExtra(PaymentParams.POSTAL_CODE_SHIPPING, "00966"); //Put Country Phone code if Postal code not available '00973'
 
 //Payment Page Style
         in.putExtra(PaymentParams.PAY_BUTTON_COLOR, "#FDC901");
@@ -417,6 +419,9 @@ public class TicketFragment extends Fragment {
                 Log.e("Tag", data.getStringExtra(PaymentParams.TOKEN));
                 Log.e("Tag", data.getStringExtra(PaymentParams.CUSTOMER_EMAIL));
                 Log.e("Tag", data.getStringExtra(PaymentParams.CUSTOMER_PASSWORD));
+
+                Toast.makeText(homeActivity, "لم تتم عمليه الدفع", Toast.LENGTH_SHORT).show();
+
             }
         }
     }
@@ -439,6 +444,19 @@ public class TicketFragment extends Fragment {
     @OnClick(R.id.btn_confirm)
     public void onViewClicked() {
         payment();
+    }
+
+    protected String getSaltString() {
+        String SALTCHARS = "1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 4) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
+
     }
 
     @Override
